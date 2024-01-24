@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VacasWPF", "VacasWPF\VacasWPF.csproj", "{854DFBB2-3C11-4996-9AC2-B8F81C902333}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{854DFBB2-3C11-4996-9AC2-B8F81C902333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854DFBB2-3C11-4996-9AC2-B8F81C902333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854DFBB2-3C11-4996-9AC2-B8F81C902333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854DFBB2-3C11-4996-9AC2-B8F81C902333}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F81868C0-32F8-4B3C-8305-04139E640C07}
+	EndGlobalSection
+EndGlobal
