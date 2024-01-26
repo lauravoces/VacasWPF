@@ -51,8 +51,8 @@ namespace VacasWPF
             int newKey = context.Vacas.Max(v => v.id) + 1;
             Vaca newVaca = new Vaca(newKey, 
                 "Oviedo", 
-                new DateOnly(2008, 4, 2), 
-                new DateOnly(2008, 9, 21), 
+                new DateTime(2008, 4, 2), 
+                new DateTime(2008, 9, 21), 
                 123, 
                 87, 
                 "H",
@@ -73,10 +73,16 @@ namespace VacasWPF
             {
                 Vaca vacaGrid = e.Row.Item as Vaca;
                 if (vacaGrid != null) {
-                    context.SaveChanges();
-
+                    Dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        context.SaveChanges();
+                    }), System.Windows.Threading.DispatcherPriority.Background);
                 }
+
+            }
             }
         }
+
     }
+
 }
