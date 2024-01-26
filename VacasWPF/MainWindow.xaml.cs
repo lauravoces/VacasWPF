@@ -66,5 +66,17 @@ namespace VacasWPF
             context.Vacas.Remove(dgVacas.SelectedItem as Vaca);
             context.SaveChanges();
         }
+
+        private void dgVacas_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
+        {
+            if (e.EditAction == DataGridEditAction.Commit)
+            {
+                Vaca vacaGrid = e.Row.Item as Vaca;
+                if (vacaGrid != null) {
+                    context.SaveChanges();
+
+                }
+            }
+        }
     }
 }

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid Name="dgVacas" ItemsSource="{Binding Vacas}" AutoGenerateColumns="True" Margin="0,0,0,202"/>
+        <DataGrid IsReadOnly="False" Name="dgVacas" ItemsSource="{Binding Vacas}" AutoGenerateColumns="True" Margin="0,0,0,202" CellEditEnding="dgVacas_CellEditEnding"/>
         <Button Name="btnNueva" Content="Nueva vaca" HorizontalAlignment="Left" Margin="88,386,0,0" VerticalAlignment="Top" Click="btnNueva_Click"/>
         <Button Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="241,386,0,0" VerticalAlignment="Top" Click="btnEliminar_Click"/>
 
